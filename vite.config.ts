@@ -1,5 +1,4 @@
 import {defineConfig} from 'vite';
-import react from '@vitejs/plugin-react';
 import dts from "vite-plugin-dts";
 // import ts from '@vitejs/plugin'
 import path, { dirname, format } from 'path';
@@ -8,7 +7,7 @@ const entryDir = path.resolve(__dirname, 'src/index.ts');
 export default defineConfig({
     plugins:[dts({
         outputDir: outDir,
-    }), react()],
+    })],
     build: {
         outDir,
         lib: {

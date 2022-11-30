@@ -12,7 +12,7 @@ const {
   isFile,
   copyDir,
   copyDirOrFile,
-} = require("../dist/index");
+} = require("nodefs-ext");
 const test_dir = path.resolve(__dirname, './tests');
 const testDir = path.resolve(__dirname, './tests/test/method/mkdir');
 const testFilePath = `${testDir}/test.txt`;
